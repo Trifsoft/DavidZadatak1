@@ -23,6 +23,11 @@ public class Student {
     }
 
     @Override
+    public int hashCode() {
+        return 13*ime.hashCode() + 17*prezime.hashCode();
+    }
+
+    @Override
     public String toString() {
         return ime + " " + prezime;
     }
